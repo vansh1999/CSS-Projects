@@ -128,6 +128,8 @@ nav box-icon {
 		height: auto;
 		position: absolute;
 		top: 58px;
+		opacity: 1;
+		z-index: 1;
 
 		/*  */
 	}
@@ -359,4 +361,83 @@ footer p {
 	display: flex;
 	align-items: center;
 	padding: 1rem;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+	.row {
+		/* first chnage flex direction */
+		flex-direction: column;
+	}
+	.header-content {
+		width: 100%;
+		position: relative;
+		/* give position relative to use right and top */
+		/* dont use absolute , it will take content-header out of document flow */
+		top: 8%;
+		left: 0%;
+		text-align: center;
+		padding: 0 8px;
+	}
+
+	input[type=text],
+	input[type=email],
+	input[type=submit] {
+		width: 80%;
+		margin: 1.2rem auto;
+	}
+
+	.process-bar {
+		display: none;
+	}
+
+	.process-content {
+		margin-top: 0px;
+	}
+
+	.process-content .box-1,
+	.process-content .box-2,
+	.process-content .box-3 {
+		text-align: center;
+	}
+
+	.testimony .test {
+		margin: 1rem 0;
+	}
+
+	.contact form input {
+		width: 100%;
+	}
+
+	.contact textarea {
+		width: 100%;
+	}
+}
+
+/* remove input form if in header if screen is less than 400px */
+
+@media (max-width: 400px) {
+	.header-content input[type=text],
+	input[type=email],
+	input[type=submit] {
+		display: none;
+	}
+
+	h1 {
+		font-weight: 800;
+		font-size: 2.6rem;
+	}
+
+	h2 {
+		font-weight: 800;
+		font-size: 1.4rem;
+	}
+
+	.process .row h1 {
+		/* display: flex;
+		justify-content: center;
+		align-items: center; */
+		text-align: center;
+	}
 }
