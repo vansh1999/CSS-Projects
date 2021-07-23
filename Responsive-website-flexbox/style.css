@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
+
+/* base styling */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 400;
+	/* 1.6 * 10 = 16px */
+	font-size: 1.6rem;
+	color: whitesmoke;
+}
+
+h1,
+h2,
+p {
+	margin: 1.6rem 0;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 3.6rem;
+}
+
+h2 {
+	font-weight: 800;
+	font-size: 2.4rem;
+}
+
+p {
+	font-weight: 400;
+	font-size: 1.8rem;
+}
+
+img {
+	/* make image responsice */
+	width: 100%;
+	height: auto;
+}
+
+/* utility  */
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: auto;
+}
+
+section {
+	padding: 100px 0;
+}
+
+/* Hero Section */
+
+header {
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('images/header-image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: whitesmoke;
+}
+
+.logo h1 {
+	font-size: 3.2rem;
+	color: #4caf50;
+	margin: 0;
+}
+
+nav {
+	padding: 2% 8%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-left: 2.5rem;
+}
+
+nav ul li a:hover {
+	color: #4caf50;
+	transition: .4s ease-in-out;
+}
+
+nav box-icon {
+	display: none;
+}
+
+/* make menu box-icon visible if screen is less than 700px wide */
+@media (max-width: 700px) {
+	nav {
+		flex-direction: column;
+		position: relative;
+	}
+	nav box-icon {
+		display: block;
+		position: absolute;
+		top: 18px;
+		right: 2%;
+	}
+
+	nav box-icon:hover {
+		cursor: pointer;
+	}
+
+	nav ul {
+		display: none;
+		background: whitesmoke;
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 58px;
+
+		/*  */
+	}
+
+	.showmenu {
+		display: block;
+	}
+
+	nav ul li {
+		display: block;
+		padding: 1% 1%;
+		align-items: center;
+	}
+
+	nav ul li a {
+		color: #222;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+/* header content */
+
+.header-content {
+	width: 50%;
+	position: relative;
+	/* give position relative to use right and top */
+	/* dont use absolute , it will take content-header out of document flow */
+	top: 16%;
+	left: 8%;
+}
+
+form {
+	margin: 2.4rem 0;
+}
+
+input {
+	font-size: 1.8rem;
+}
+
+input[type="text"],
+input[type="email"] {
+	width: 50%;
+	padding: 12px 20px;
+	margin: 1.2rem 0;
+	border: 1px solid #ccc;
+	display: block;
+}
+
+input[type="submit"] {
+	width: 50%;
+	background-color: #4caf50;
+	color: #fff;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+input::placeholder {
+	font: 1.3rem;
+	color: #ccc;
+}
+
+.about-left,
+.about-middle,
+.about-right {
+	flex-basis: 30%;
+}
+
+.btn {
+	background-color: #4caf50;
+	color: #fff;
+	padding: 8px 16px;
+	display: inline-block;
+	margin: 2rem 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.about2 {
+	background-color: #222;
+	color: whitesmoke;
+}
+
+.about2-left {
+	flex-basis: 50%;
+}
+
+.about2-right {
+	flex-basis: 30%;
+}
+
+.card {
+	padding: 3rem 8rem;
+	color: #222;
+	background-color: #dcdcdc;
+	margin: 1.6rem;
+	text-align: center;
+}
+
+/* Process Section */
+
+.process .row {
+	justify-content: center;
+}
+
+.process-content {
+	margin-top: 100px;
+}
+
+.process-bar {
+	width: 80%;
+	height: 2px;
+	background-color: #222;
+	margin: auto;
+	position: relative;
+}
+
+.c1,
+.c2,
+.c3 {
+	width: 20px;
+	height: 20px;
+	background-color: #222;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.c1 {
+	top: -8px;
+	left: 50px;
+}
+
+.c2 {
+	top: -8px;
+	left: 50%;
+}
+
+.c3 {
+	top: -8px;
+	right: 50px;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+	padding: 1.8rem;
+}
+
+.process .box-2 {
+	text-align: center;
+}
+
+.process .box-3 {
+	text-align: right;
+}
+
+.process-content h2 {
+	color: #4caf50;
+}
+
+/* testimony */
+
+.testimony {
+	background-color: #222;
+	color: whitesmoke;
+}
+
+.test {
+	background-color: #505050;
+	padding: 4rem 8rem;
+	margin: 0 1rem;
+}
+
+.testimony .image {
+	height: 80px;
+	width: 80px;
+}
+
+.testimony img {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+/* Contact */
+
+.contact .row {
+	justify-content: center;
+}
+
+.contact form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact form input {
+	width: 50%;
+}
+
+.contact textarea {
+	width: 50%;
+	height: 15vh;
+	padding: 12px 20px;
+	border: 1px solid #ccc;
+	font-size: 1.8rem;
+	resize: none;
+	color: #ccc;
+	margin: 1.2rem 0;
+	font-family: sans-serif;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: #222;
+}
+
+footer p {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+}
