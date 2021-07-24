@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --blue: #002ed0;
+  --white: #fff;
+  --black: #000;
+}
+
+/* Section - Hero */
+
+.hero {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.hero-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+  width: 90%;
+  margin: auto;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.hero-left span {
+  font-size: 1.4rem;
+}
+
+.hero-left h1 {
+  font-size: 6.2rem;
+  line-height: 1.2;
+}
+
+.hero-left p {
+  font-size: 1.8rem;
+  line-height: 2.3;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1100px) {
+  .hero-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-left h1 {
+    font-size: 4.2rem;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-left span {
+    font-size: 1.2rem;
+  }
+
+  .hero-left h1 {
+    font-size: 3.4rem;
+    line-height: 1.2;
+  }
+
+  .hero-left p {
+    font-size: 1.2rem;
+    line-height: 2.3;
+  }
+}
+
+/* About css */
+
+.about {
+  padding: 5% 5%;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about-container h1 {
+  color: var(--white);
+  font-size: 4.2rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fff;
+  margin-bottom: 3rem;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 70vh;
+  margin-right: 2rem;
+}
+
+.about-text h2 {
+  font-size: 2.8rem;
+  line-height: 1.3;
+  margin-bottom: 3rem;
+}
+
+.about-text p {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-bottom: 3rem;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  width: 600px;
+  height: 600px;
+}
+
+@media screen and (max-width: 1340px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .about-image {
+    width: 270px;
+    height: 270px;
+  }
+
+  .about-text h1 {
+    font-size: 3.4rem;
+  }
+  .about-text h2 {
+    font-size: 1.2rem;
+  }
+  .about-text p {
+    font-size: 1.2rem;
+  }
+}
+
+/*  Services css */
+
+.services {
+  background-color: var(--blue);
+  color: #fff;
+  position: relative;
+}
+
+.services-container {
+  padding: 5% 5% 5% 5%;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 70vh;
+}
+
+.services-container h1 {
+  font-size: 2.8rem;
+}
+
+.services-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.services-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.services-desc h2 {
+  font-size: 1.8rem;
+  margin-left: 2rem;
+}
+
+.services-desc p {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+}
+
+.services-right img {
+  margin-top: 2rem;
+  width: 80%;
+  height: 90%;
+}
+
+/* Yellow bar */
+
+.yellow-bar {
+  position: absolute;
+  background-color: yellow;
+  height: 10vh;
+  width: 80%;
+  bottom: -4px;
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.yellow-bar img {
+  margin: 0 3rem;
+}
+
+.yellow-bar p,
+.yellow-bar span {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.6rem;
+  margin-right: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1330px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-right img {
+    display: flex;
+    margin-top: 1rem;
+    width: 60%;
+    height: 70%;
+    margin: auto;
+  }
+
+  .yellow-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .yellow-bar img {
+    display: none;
+  }
+
+  .services-left {
+    margin-top: 2rem;
+  }
+
+  .services-right img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6rem;
+  }
+  .services-left {
+    margin-top: 24rem;
+  }
+  .services-right {
+    margin-top: 34rem;
+  }
+}
