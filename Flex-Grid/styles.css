@@ -5,6 +5,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Hide the scroll bar but keep the scroll functionality as overflow: hidden; /* Hide scrollbars   remove both*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --blue: #002ed0;
   --white: #fff;
