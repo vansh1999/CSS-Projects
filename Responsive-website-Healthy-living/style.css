@@ -149,6 +149,7 @@ header nav .right-side-menu .sub-menu a {
   text-transform: capitalize;
   transition: all 0.2s;
   background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2rem;
 }
 
 header nav .right-side-menu .sub-menu a li:hover {
@@ -179,10 +180,10 @@ header nav .right-side-menu .sub-menu button:hover {
 .hero-left-side {
   width: 50%;
   height: 80vh;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: flex-start; */
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .hero-left-side h1 {
@@ -227,4 +228,255 @@ header nav .right-side-menu .sub-menu button:hover {
   margin-top: 10rem;
   width: 80rem;
   height: 70rem;
+}
+
+/* About -1 / Section 2 CSS */
+
+.common-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 70vh;
+  padding: 2rem 20rem;
+  margin: 10rem 0rem;
+}
+
+.common-section .left-side {
+  width: inherit;
+  height: inherit;
+}
+
+.common-section .left-side figure {
+  width: 20rem;
+  height: 65rem;
+  background: #f3f9ff;
+  border-radius: 2rem;
+}
+
+.common-section .left-side  img {
+  width: 45rem;
+  height: 60rem;
+  border-radius: 2rem;
+  margin-left: 10rem;
+  margin-top: 2.5rem;
+}
+
+.common-section .right-side {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.common-section .right-side h2 {
+  width: 40rem;
+  font-style: normal;
+  font-size: 5.5rem;
+  font-weight: bold;
+  line-height: 6rem;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+}
+
+.common-section .right-side p {
+  width: 40.3rem;
+  height: 9rem;
+  text-transform: lowercase;
+  margin-bottom: 3rem;
+}
+
+.common-section .right-side .common-button {
+  padding: 1rem 3rem;
+  background-color: var(--primary-button-background);
+  margin-right: 2rem;
+  color: #fff;
+}
+
+.common-section .right-side button:last-child {
+  color: var(--main-color);
+  background-color: transparent;
+}
+
+.common-section .right-side .common-button:hover {
+  background: #cc491d;
+}
+
+.common-section .right-side .common-button-normal:hover {
+  background: var(--primary-button-background);
+  color: #f0f7ff;
+}
+
+/* About -2 / Section 3 CSS */
+
+#section-three .left-about-2 {
+  align-items: center;
+}
+
+/* Goals / section 4 CSS */
+
+.goals-section {
+  width: 100%;
+  height: 70rem;
+  background: var(--background-color);
+  padding: 2rem 20rem;
+  margin-bottom: 3rem;
+}
+
+.goals-section h2 {
+  font-size: 5.5rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.goals-section p {
+  width: 40rem;
+  height: 9rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  margin: auto;
+}
+
+.goals-tasks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 4rem;
+}
+
+.goals-tasks .task-1 {
+  padding-top: 2rem;
+  text-align: center;
+  border-radius: 2rem;
+  transition: all 0.3s linear;
+}
+
+.goals-tasks .task-1 h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin-top: 2rem;
+}
+
+.goals-tasks .task-1 img {
+  width: 20rem;
+  height: 20rem;
+  transition: all 0.7s;
+}
+
+.goals-tasks .task-1:last-child {
+  background-color: #fff;
+  box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+}
+
+.goals-tasks .task-1:last-child:hover {
+  background-color: var(--background-color);
+  box-shadow: 0rem 0rem 0rem rgba(35, 52, 53, 0.25);
+}
+
+.goals-tasks .task-1:hover {
+  background-color: #fff;
+  box-shadow: 0rem 0.4rem 2rem rgba(35, 52, 53, 0.25);
+}
+
+.goals-tasks .task-1:hover > img {
+  transform: rotate(360deg);
+}
+
+/* Footer CSS */
+
+footer {
+  width: 100%;
+  background-color: var(--button-background);
+  height: auto;
+  padding: 5rem 20rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #fff;
+  margin-top: -4rem;
+}
+
+footer img {
+  width: 100px;
+  height: auto;
+}
+
+footer .footer-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer a,
+footer li,
+footer p,
+footer h4 {
+  color: #fff;
+}
+
+footer div h4 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+footer div a {
+  font-size: 1.7rem;
+  line-height: 150%;
+}
+
+footer .footer-div-5 a {
+  font-size: 1.5rem;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.icon-bar a {
+  width: 18rem;
+  background-color: var(--button-background);
+  color: #fff;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .7rem;
+  transition: all 0.5s linear;
+  transform: translateX(-15rem);
+}
+
+.icon-bar a:hover {
+  transform: translateX(0rem);
+}
+
+.icon-bar .telegram {
+  background: #00aced;
+}
+
+.icon-bar .instagram {
+  background: #e4405f;
+}
+
+.icon-bar .youtube {
+  background: #cd201f;
+}
+
+.icon-bar .facebook {
+  background: #0077b5;
+}
+
+.icon-bar a .fab {
+  animation: letszoom 3s linear alternate-reverse infinite;
+}
+
+@keyframes letszoom {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
