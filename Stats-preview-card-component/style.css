@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --main-background-color: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --accent: hsl(277, 25%, 45%);
+}
+
+body {
+  background-color: var(--main-background-color);
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: var(--card-background);
+  color: var(--accent);
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.container .left-side {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .left-side h1 {
+  font-size: 4rem;
+  color: hsl(0, 0%, 100%);
+  width: 60%;
+  margin-bottom: 4rem;
+}
+
+.insights {
+  font-size: 4rem;
+  color: var(--accent);
+}
+.container .left-side p {
+  width: 60%;
+  font-size: 1.8rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 6rem;
+}
+
+.container .left-side .stats {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.container .left-side .stats h2 {
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+}
+
+.container .left-side .stats .last {
+  font-size: 1.8rem;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.container .right-side {
+  position: relative;
+  width: 50%;
+  background: var(--accent);
+  overflow: hidden;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+
+.container .right-side img {
+  top: 0;
+  right: 0;
+  object-fit: cover;
+  opacity: 0.5;
+  filter: blur(0px);
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 375px) {
+  .container {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .container .left-side {
+    width: 100%;
+    height: 70%;
+    order: 2;
+    justify-content: flex-start;
+  }
+
+  .container .left-side h1 {
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%);
+    width: 90%;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .insights {
+    font-size: 3rem;
+    color: var(--accent);
+  }
+
+  .container .left-side p {
+    width: 90%;
+    font-size: 1.6rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .container .left-side .stats {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: 2rem; */
+  }
+
+  .container .left-side .stats span {
+    padding: 0.5rem;
+  }
+
+  .container .left-side .stats h2 {
+    font-size: 1.8rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+  }
+
+  .container .left-side .stats .last {
+    font-size: 1.6rem;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  /* image side */
+
+  .container .right-side {
+    width: 100%;
+    height: 30%;
+    order: 1;
+    border-radius: 1rem 1rem 0rem 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .container .right-side img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-height: 570px) {
+  .container .left-side .stats {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+  }
+}
