@@ -24,6 +24,9 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ## My Solution
 
+![Screenshot_20210803_162250](https://user-images.githubusercontent.com/39709733/128005421-fcb535e6-e872-45a9-825f-37517f5de939.png)
+
+![Screenshot_20210803_162129](https://user-images.githubusercontent.com/39709733/128005602-0b41ca46-d64c-4576-a9eb-819db5f4df67.png)
 
 
 ## Where to find everything
