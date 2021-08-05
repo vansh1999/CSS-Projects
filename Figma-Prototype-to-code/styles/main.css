@@ -1,1 +1,118 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  background: #eeeeee;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container .logo {
+  width: 120px;
+  height: auto;
+}
+
+.container h1 {
+  font-size: 3.2rem;
+  margin: 3rem 0;
+}
+
+.container span {
+  font-size: 3.2rem;
+  margin: 3rem 0;
+}
+
+.container p {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+.container .left {
+  padding: 1rem 1.8rem;
+  margin: 0 0 2rem 0;
+  background: linear-gradient(160deg, #601df7 0%, #8800ff 100%);
+}
+
+.container .left p,
+.container .left h1 {
+  color: white;
+}
+
+.container .left .light {
+  color: #eeeeeeb3 !important;
+  margin-top: 2em;
+}
+
+.container .right {
+  padding: 1rem 1.8rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.container .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container input,
+.container button {
+  width: calc(100% - 3rem);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.8rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.container button {
+  width: calc(100% - 3rem);
+  background: #8800ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.container .attention {
+  width: 100%;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .attention .me {
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.container .attention .arrow {
+  width: 15rem;
+  height: auto;
+}
+/*# sourceMappingURL=main.css.map */
