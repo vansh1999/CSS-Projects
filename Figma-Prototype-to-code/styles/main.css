@@ -115,4 +115,78 @@ body {
   width: 15rem;
   height: auto;
 }
+
+@media (min-width: 768px) {
+  * {
+    font-size: 68.5%;
+  }
+  input,
+  button {
+    width: calc(60% - 2rem) !important;
+  }
+  button {
+    width: calc(60%) !important;
+  }
+  .attention {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .me {
+    padding: 2rem !important;
+  }
+  .arrow {
+    padding: 2rem !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  * {
+    font-size: 68.5%;
+  }
+  .container .logo {
+    margin: 1rem 0;
+  }
+  .container .inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 55% auto;
+        grid-template-columns: 55% auto;
+    height: 100vh;
+  }
+  .container .inner .left {
+    text-align: left;
+    margin: 0;
+    padding: 2rem !important;
+    display: -ms-grid;
+    display: grid;
+  }
+  .container .inner .left .content {
+    padding: 0 3rem;
+  }
+  .container .inner .left h1,
+  .container .inner .left span {
+    font-size: 4.8rem;
+    line-height: 3.8rem;
+  }
+  .container .inner .left span {
+    display: block;
+  }
+  .container .inner .left p {
+    font-size: 2rem;
+  }
+  .container .inner .right {
+    display: -ms-grid;
+    display: grid;
+    text-align: right;
+    -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .container .inner .right input,
+  .container .inner .right button {
+    width: calc(100%) !important;
+  }
+}
 /*# sourceMappingURL=main.css.map */
